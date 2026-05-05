@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+:root,
+:root[data-theme] {
+  --sl-nav-height: 65px;
+}
+
+.site-title {
+  white-space: pre-line;
+  line-height: 1.2;
+}

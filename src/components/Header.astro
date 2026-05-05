@@ -1,0 +1,85 @@
+---
+// Custom Header overriding starlight-theme-mdbook Header
+// Removed print button and moved ThemeSelect to right-buttons
+import config from 'virtual:starlight/user-config';
+import { Icon } from '@astrojs/starlight/components';
+import Search from 'virtual:starlight/components/Search';
+import SiteTitle from 'virtual:starlight/components/SiteTitle';
+import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
+import EditLink from 'starlight-theme-mdbook/overrides/EditLink.astro';
+
+const shouldRenderSearch =
+	config.pagefind || config.components.Search !== '@astrojs/starlight/components/Search.astro';
+
+const socialLinks = config.social ?? [];
+---
+
+<div class="mdbook-nav">
+	<div class="left-buttons">
+		<button
+			id="mdbook-sidebar-toggle"
+			class="icon-button"
+			type="button"
+			title="Toggle Table of Contents"
+			aria-label="Toggle Table of Contents"
+			aria-controls="starlight__sidebar"
+		>
+			<Icon name="bars" />
+		</button>
+	</div>
+
+	<div class="title-wrapper sl-flex">
+		<SiteTitle />
+	</div>
+
+	<div class="right-buttons">
+		{shouldRenderSearch && <Search class="icon-button search-button" />}
+		<ThemeSelect />
+		{
+			socialLinks.map((entry) => (
+				<a class="icon-button" href={entry.href} title={entry.label} aria-label={entry.label}>
+					<Icon name={entry.icon} />
+				</a>
+			))
+		}
+		<EditLink />
+	</div>
+</div>
+
+<script>
+	// Sidebar visibility is tracked on <html data-sidebar> by ThemeProvider.astro
+	// (works at any viewport width, unlike Starlight's own mobile-only toggle).
+	document.getElementById('mdbook-sidebar-toggle')?.addEventListener('click', () => {
+		window.StarlightThemeProvider?.toggleSidebar();
+	});
+</script>
+
+<style>
+	@layer starlight.components {
+		.mdbook-nav {
+			display: flex;
+			align-items: center;
+			height: 100%;
+			gap: 0.5rem;
+		}
+
+		.left-buttons,
+		.right-buttons {
+			display: flex;
+			align-items: center;
+			height: 100%;
+			gap: 0.25rem;
+			flex-shrink: 0;
+		}
+
+		.title-wrapper {
+			flex: 1;
+			min-width: 0;
+			justify-content: center;
+			text-align: center;
+			overflow: clip;
+			padding: 0.25rem;
+			margin: -0.25rem;
+		}
+	}
+</style>
