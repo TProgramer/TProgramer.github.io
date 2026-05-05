@@ -10,7 +10,7 @@ export default defineConfig({
   site: "https://tprogramer.github.io",
   integrations: [
     starlight({
-      title: "My Docs",
+      title: "개발 고민 생각\n저장소",
       components: {
         Header: "./src/components/Header.astro",
       },
@@ -20,7 +20,7 @@ export default defineConfig({
         {
           icon: "github",
           label: "GitHub",
-          href: "https://github.com",
+          href: "https://github.com/TProgramer",
         },
       ],
       sidebar: [
