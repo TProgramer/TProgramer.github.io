@@ -4,6 +4,7 @@ import starlight from "@astrojs/starlight";
 
 import tailwindcss from "@tailwindcss/vite";
 import starlightThemeMdbook from "starlight-theme-mdbook";
+import starlightObsidian, { obsidianSidebarEntries } from "starlight-obsidian";
 
 // https://astro.build/config
 export default defineConfig({
@@ -15,7 +16,13 @@ export default defineConfig({
         Header: "./src/components/Header.astro",
       },
       customCss: ["./src/styles/global.css"],
-      plugins: [starlightThemeMdbook()],
+      plugins: [
+        starlightThemeMdbook(),
+        starlightObsidian({
+          vault: "/Users/carry/job_hunting/Job Hunt Docs/blog",
+          copyFrontmatter: "starlight",
+        }),
+      ],
       social: [
         {
           icon: "github",
@@ -25,15 +32,8 @@ export default defineConfig({
       ],
       sidebar: [
         {
-          label: "Guides",
-          items: [
-            // Each item here is one entry in the navigation menu.
-            { label: "Example Guide", slug: "guides/example" },
-          ],
-        },
-        {
-          label: "Reference",
-          items: [{ autogenerate: { directory: "reference" } }],
+          label: "Tech",
+          items: [obsidianSidebarEntries],
         },
       ],
     }),
