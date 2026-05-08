@@ -19,7 +19,7 @@ export default defineConfig({
       plugins: [
         starlightThemeMdbook(),
         starlightObsidian({
-          vault: "/Users/carry/job_hunting/Job Hunt Docs/blog",
+          vault: "./posts",
           copyFrontmatter: "starlight",
         }),
       ],
