@@ -19,3 +19,7 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+# ignore docs (duplicated contents when using starlight-obsidian plugin)
+src/assets/notes
+src/content/docs/notes
