@@ -32,7 +32,7 @@ export default defineConfig({
       ],
       sidebar: [
         {
-          label: "Tech",
+          label: "Posts",
           items: [obsidianSidebarEntries],
         },
       ],
