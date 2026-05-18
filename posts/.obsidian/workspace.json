@@ -4,21 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "df72580f02d5ef25",
+        "id": "8c3866138ff3ec1b",
         "type": "tabs",
         "children": [
           {
-            "id": "30d2d6625366605d",
+            "id": "aa61addf7e455590",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "강사님 마이페이지.md",
-                "mode": "source",
-                "source": false
+                "file": "assets/투닝 챗 프로젝트/탈옥 방지 프롬프트.pdf"
               },
-              "icon": "lucide-file",
-              "title": "강사님 마이페이지"
+              "icon": "lucide-file-text",
+              "title": "탈옥 방지 프롬프트"
             }
           }
         ]
@@ -99,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "강사님 마이페이지.md",
+                "file": "assets/투닝 챗 프로젝트/탈옥 방지 프롬프트.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "강사님 마이페이지.md",
+                "file": "assets/투닝 챗 프로젝트/탈옥 방지 프롬프트.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "강사님 마이페이지.md",
+                "file": "assets/투닝 챗 프로젝트/탈옥 방지 프롬프트.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -188,8 +186,30 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "30d2d6625366605d",
+  "active": "aa61addf7e455590",
   "lastOpenFiles": [
-    "컷 기능 안내문서.md"
+    "assets/투닝 챗 프로젝트/file-20260423155549449.png",
+    "assets/투닝 챗 프로젝트/file-20260423172958057.png",
+    "assets/투닝 챗 프로젝트/file-20260605195513810.png",
+    "assets/투닝 챗 프로젝트/화면 기록 2026-06-05 오후 8.00.28.gif",
+    "assets/투닝 챗 프로젝트/화면 기록 2026-06-05 오후 7.58.49.gif",
+    "assets/투닝 챗 프로젝트/화면 기록 2026-06-05 오후 7.57.56.gif",
+    "assets/투닝 챗 프로젝트/화면 기록 2026-06-05 오후 7.56.28.gif",
+    "assets/투닝 챗 프로젝트/화면 기록 2026-06-05 오후 7.54.49.gif",
+    "assets/투닝 챗 프로젝트/화면 기록 2026-06-05 오후 7.41.43.gif",
+    "assets/투닝 챗 프로젝트/화면 기록 2025-09-17 오후 5.11.23.gif",
+    "assets/투닝 챗 프로젝트/화면 기록 2025-09-17 오후 4.57.16.gif",
+    "assets/투닝 챗 프로젝트/탈옥 방지 프롬프트.pdf",
+    "투닝 챗 프로젝트.md",
+    "툰스퀘어 퇴사 회고.md",
+    "강사님 마이페이지.md",
+    "컷 기능 안내문서.md",
+    "DB 내 개인(민감)정보 처리 방식.md",
+    "투닝 강사님 관리 서비스.md",
+    "assets/투닝 강사님 관리 서비스",
+    "투닝에서의 1년 10개월.md",
+    "툰스퀘어에서의 1년 10개월, 퇴사 회고.md",
+    "assets/툰스퀘어 퇴사 회고",
+    "AI에 관하여.md"
   ]
 }
